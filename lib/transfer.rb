@@ -21,8 +21,7 @@ class Transfer
       @amount = 0
       return @status
     end
-    
+
       return "Transaction rejected. Please check your account balance."
-    end
   end
 end
