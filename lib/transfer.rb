@@ -11,6 +11,7 @@ class Transfer
 
   def valid?
     (receiver.valid? && sender.valid?) ? true : false
+    binding.pry
   end
 
   def execute_transaction
@@ -21,5 +22,6 @@ class Transfer
       @status = "complete"
     elsif self.valid? == false
       return "Transaction rejected. Please check your account balance."
+    end
   end
 end
