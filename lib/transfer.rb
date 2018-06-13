@@ -31,7 +31,7 @@ class Transfer
       @amount = 0
       @status = "reversed"
   else
-    "Transaction incomplete."
+    "Transaction cannot be reversed."
   end
 end
 
