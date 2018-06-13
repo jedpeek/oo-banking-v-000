@@ -14,6 +14,7 @@ class Transfer
       return true
     else
       false
+    end
   end
 
   def execute_transaction
