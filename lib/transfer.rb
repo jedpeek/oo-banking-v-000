@@ -29,7 +29,7 @@ class Transfer
       @receiver.balance -= @amount
       @sender.balance += @amount
       @amount = 0
-      @status = "Transaction refunded"
+      @status = "reversed"
   else
     "Transaction rejected."
   end
